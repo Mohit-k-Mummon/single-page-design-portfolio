@@ -57,7 +57,7 @@ body {
 
 @media screen and (min-width: 768px) {
     body {
-        padding: 3.9rem;
+        padding: 3.4rem 3.9rem;
     }
 }
 
@@ -106,6 +106,7 @@ body {
     width: 100%;
     text-align: center;
     max-width: 75.2rem;
+    margin-bottom: 3.2rem;
 }
 
 .header__heading {
@@ -122,8 +123,12 @@ body {
 }
 
 @media screen and (min-width:768px) {
+    .header {
+        margin-bottom: 6.3rem;
+    }
     .header__heading {
         font-size: 4.4rem;
+        margin-bottom: 2.7rem;
     }
 
     .header__tagline {
@@ -133,6 +138,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    .header {
+        margin-bottom: 8rem;
+    }
     .header__heading {
         font-size: 5.6rem;
         margin-bottom: 2.4rem;
@@ -176,6 +184,7 @@ body {
 .categories {
     width: 100%;
     gap: 2.4rem;
+    margin-bottom: 10rem;
 }
 
 .category {
@@ -244,6 +253,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .categories {
+        margin-bottom: 13.1rem;
+    }
     .ilustrations {
         grid-column: 3 / 5;
     }
@@ -269,6 +281,87 @@ body {
     }
 }
 
+
+
+
+/**************** 
+    About
+*****************/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about__image {
+    width: 88%;
+    max-width: 44.5rem;
+    margin-bottom: 3.8rem;
+}
+
+.about__body {
+    text-align: center;
+}
+
+.about__body .heading {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 2.6rem;
+}
+
+.about__body .tagline {
+    font-size: 1.6rem;
+    color: var(--gray);
+    line-height: 1.55;
+    margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        flex-direction: row;
+    }
+    
+    .about__image {
+        position: relative;
+        right: 8rem;
+        width: 230%;
+        height: auto;
+        margin: 0;
+    }
+
+    .about__body {
+        text-align: left;
+    }
+
+    .about__body .heading {
+        font-size: 3.2rem;
+    }
+
+    .about__body .tagline {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        gap: 12.5rem;
+        height: fit-content;
+    }
+    .about__image {
+        width: 200%;
+        right: 0;
+        top: 0;
+    }
+    .about__body .heading {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 3.2rem;
+    }
+
+    .about__body .tagline {
+        margin-bottom: 3.3rem;
+    }
+}
 
 
 
