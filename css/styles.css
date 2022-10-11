@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap');
+
+/**************** 
+    VARIABLES
+*****************/
+:root {
+    /* Colors */
+        --purple: #755cde;
+        --light-orange: #f6a560;
+        --pink: #f39e9e;
+        --red: #eb7565;
+        --teal: #61c4b7;
+        --dark-purple: #552049;
+        --black: #030303;
+        --gray: #7a746e;
+        --white: #fff7f0;
+}
+
+
+
+/**************** 
+    RESET
+*****************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/**************** 
+    MAIN
+*****************/
+body {
+    min-height: 100vh;
+    background-color: var(--white);
+    padding: 1.6rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Button Mobile width 176px */
+/* Tablet & Desktop width 228px */
+
+/**************** 
+    Buttons
+*****************/
+
+.btn {
+    font-family: inherit;
+    padding: 1.3rem 2.884rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn--one {
+    background-color: var(--black);
+}
+
+.btn--one:hover {
+    background-color: var(--purple);
+}
+
+.btn--two {
+    background-color: var(--red);
+}
+
+.btn--two:hover {
+    background-color: var(--light-orange);
+}
+
+@media screen and (min-width:768px) {
+    .btn {
+        font-size: 1.5rem;
+        padding: 1.85rem 5.006rem;
+        font-weight: 600;
+    }
+}
+
+
