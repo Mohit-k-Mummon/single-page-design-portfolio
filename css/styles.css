@@ -50,6 +50,17 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 3.9rem;
+    }
+}
+
 
 
 
@@ -62,7 +73,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 111.1rem;
-    margin: 0 auto;
+    margin: 0 auto 3.2rem auto;
 }
 
 .nav__logo {
@@ -70,10 +81,68 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .nav {
+        margin: 0 auto 6.4rem auto;
+
+    }
     .nav__logo {
         height: 6.4rem;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        margin: 0 auto 7rem auto;
+    }
+}
+
+
+
+
+/**************** 
+    Header
+*****************/
+.header {
+    width: 100%;
+    text-align: center;
+    max-width: 75.2rem;
+}
+
+.header__heading {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
+}
+
+.header__tagline {
+    padding: 0 2.8rem 0.2rem 2.8rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: var(--gray);
+}
+
+@media screen and (min-width:768px) {
+    .header__heading {
+        font-size: 4.4rem;
+    }
+
+    .header__tagline {
+        font-size: 1.8rem;
+        padding: 0 6rem 0.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__heading {
+        font-size: 5.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .header__tagline {
+        padding: 0 1rem 0.2rem;
+    }
+}
+
 
 
 
