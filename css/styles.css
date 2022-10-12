@@ -366,6 +366,69 @@ body {
 
 
 
+/**************** 
+    Callout
+*****************/
+.callout {
+    background-color: var(--black);
+    text-align: center;
+    padding: 4.9rem 2.4rem;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.callout__heading {
+    font-size: 2.6rem;
+    margin-bottom: 2.1rem;
+}
+
+.callout__tagline {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .callout {
+        padding: 5.6rem 7.5rem 6.4rem;
+    }
+
+    .callout__heading {
+        font-size: 3.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .callout__tagline {
+        font-size: 1.8rem;
+        margin-bottom: 2.6rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .callout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8rem 9.5rem 8rem 6.5rem;
+    }
+
+    .callout__text {
+        text-align: left;
+        max-width: 54rem;
+    }
+
+    .callout__heading {
+        font-size: 4rem;
+    }
+
+    .callout__tagline {
+        margin: 0;
+    }
+}
+
+
+
+
 
 
 /**************** 
