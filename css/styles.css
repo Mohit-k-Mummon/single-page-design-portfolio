@@ -81,11 +81,11 @@ body {
     max-width: 111.1rem;
 }
 
-.--nav-top {
+.nav--top {
     margin: 0 auto 3.2rem auto;
 }
 
-.--nav-bottom {
+.nav--bottom {
     margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .--nav-top {
+    .nav--top {
         margin: 0 auto 6.4rem auto;
 
     }
