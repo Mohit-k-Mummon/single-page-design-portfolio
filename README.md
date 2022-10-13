@@ -1,4 +1,4 @@
 # single-page-design-portfolio
 Frontend Mentor Junior Level Project
 
-[Link to Project](https://www.design-portfolio-mk.netlify.app)
+[Link to Project](https://design-portfolio-mk.netlify.app/)
