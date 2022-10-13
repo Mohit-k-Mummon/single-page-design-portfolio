@@ -45,9 +45,15 @@ a {
 *****************/
 body {
     min-height: 100vh;
+    max-height: min-content;
     background-color: var(--white);
     position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.padding {
+    padding: 1.6rem;
+    height: min-content;
 }
 
 .container {
@@ -56,8 +62,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        /* padding: 3.4rem 3.9rem; */
+    .padding {
+        padding: 3.4rem 3.9rem;
     }
 }
 
@@ -73,7 +79,14 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 111.1rem;
+}
+
+.--nav-top {
     margin: 0 auto 3.2rem auto;
+}
+
+.--nav-bottom {
+    margin: 0 auto;
 }
 
 .nav__logo {
@@ -81,7 +94,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .nav {
+    .--nav-top {
         margin: 0 auto 6.4rem auto;
 
     }
@@ -91,7 +104,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    .nav {
+    .--nav-top {
         margin: 0 auto 7rem auto;
     }
 }
@@ -292,6 +305,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8.4rem;
 }
 .about__image {
     width: 88%;
@@ -370,7 +384,7 @@ body {
     Carousel
 *****************/
 .work {
-    margin: 0 auto;
+    margin: 0 auto 8.4rem;
 }
 .work__heading {
     font-size: 2.4rem;
@@ -408,6 +422,7 @@ body {
     width: 100%;
     min-width: 27rem;
     max-width: 57rem;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -430,6 +445,10 @@ body {
     justify-content: center;
 }
 
+.next:hover, .prev:hover {
+    background-color: var(--purple);
+}
+
 .prev > img, .next > img {
     height: 1.6rem;
     width: auto;
@@ -447,6 +466,7 @@ body {
     padding: 4.9rem 2.4rem;
     border-radius: 10px;
     color: var(--white);
+    margin-bottom: 4rem;
 }
 
 .callout__heading {

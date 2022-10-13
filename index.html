@@ -15,5 +15,144 @@
 		<title>Frontend Mentor | Single-page design portfolio</title>
 		<style></style>
 	</head>
-	<body></body>
+	<body>
+		<div class="padding">
+			<nav class="nav --nav-top">
+				<img class="nav__logo" src="assets/logo.svg" alt="Amy design" />
+				<button class="btn btn--one">Free Consultation</button>
+			</nav>
+			<header class="header container">
+				<h1 class="header__heading">Design solutions made&nbsp;easy</h1>
+				<p class="header__tagline">
+					With over ten years of experience in various design disciplines, I'm your
+					one-stop shop for your design needs.
+				</p>
+			</header>
+			<section class="categories container grid">
+				<div class="category graphic-design">
+					<img src="assets/pattern-graphic-design.svg" alt="" />
+					<p>Graphic Design</p>
+				</div>
+				<div class="category ui">
+					<img src="assets/pattern-ui-ux.svg" alt="" />
+					<p>UI/UX</p>
+				</div>
+				<div class="category apps">
+					<img src="assets/pattern-apps.svg" alt="" />
+					<p>Apps</p>
+				</div>
+				<div class="category ilustrations">
+					<img src="assets/pattern-illustrations.svg" alt="" />
+					<p>Illustrations</p>
+				</div>
+				<div class="category photography">
+					<img src="assets/pattern-photography.svg" alt="" />
+					<p>Photography</p>
+				</div>
+				<div class="category motion-graphics">
+					<img src="assets/pattern-motion-graphics.svg" alt="" />
+					<p>Motion Graphics</p>
+				</div>
+			</section>
+
+			<section class="about container">
+				<img class="about__image" src="assets/image-amy.webp" alt="Amy" />
+				<div class="about__body">
+					<h2 class="heading">I'm Amy, and i'd love to work on your next project</h2>
+					<p class="tagline">
+						I love working with others to create beautiful design solutions. I've
+						designed everything from brand illustrations to complete mobile apps. I'm
+						also handy with a camera!
+					</p>
+					<button class="btn btn--two">Free Consultation</button>
+				</div>
+			</section>
+		</div>
+
+		<!-- Swiper -->
+		<section class="work">
+			<h2 class="work__heading">My work</h2>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="assets/image-slide-1.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="assets/image-slide-2.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="assets/image-slide-3.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="assets/image-slide-4.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="assets/image-slide-5.jpg" alt="" /></div>
+				</div>
+			</div>
+			<!-- Arrow Buttons -->
+			<div class="button-container">
+				<div class="prev"><img src="assets/icon-arrow-left.svg" alt="" /></div>
+				<div class="next"><img src="assets/icon-arrow-right.svg" alt="" /></div>
+			</div>
+		</section>
+
+		<div class="padding">
+			<section class="callout container">
+				<div class="callout__text">
+					<h2 class="callout__heading">Book a call with me</h2>
+					<p class="callout__tagline">
+						I'd love to have a chat to see how I can help you. The best first step is
+						for use to discuess your project during a free consultation. Then we can
+						move forward from there.
+					</p>
+				</div>
+				<button class="btn btn--two">Free Consultation</button>
+			</section>
+			<nav class="nav --nav-bottom">
+				<img class="nav__logo" src="assets/logo.svg" alt="Amy design" />
+				<button class="btn btn--one">Free Consultation</button>
+			</nav>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				slidesPerView: 1.35,
+				slidesPerGroup: 1,
+				spaceBetween: 15,
+				breakpoints: {
+					775: {
+						slidesPerView: 1.6,
+					},
+					921: {
+						slidesPerView: 1.8,
+					},
+					1035: {
+						slidesPerView: 2,
+					},
+					1155: {
+						slidesPerView: 2.25,
+					},
+					1303: {
+						slidesPerView: 2.5,
+					},
+					1445: {
+						slidesPerView: 2.75,
+					},
+					1591: {
+						slidesPerView: 2.9,
+					},
+					1679: {
+						slidesPerView: 3.25,
+					},
+					1887: {
+						slidesPerView: 3.75,
+					},
+				},
+				centeredSlides: true,
+				initialSlide: 2,
+				slideToClickedSlide: true,
+				updateOnWindowResize: true,
+				navigation: {
+					nextEl: '.next',
+					prevEl: '.prev',
+				},
+			});
+		</script>
+	</body>
 </html>
