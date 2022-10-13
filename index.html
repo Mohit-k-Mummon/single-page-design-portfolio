@@ -11,24 +11,28 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 		<!-- Link Swiper's CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+		<!-- AOS stylesheet -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 		<title>Frontend Mentor | Single-page design portfolio</title>
 		<style></style>
 	</head>
 	<body>
 		<div class="padding">
-			<nav class="nav --nav-top">
+			<nav data-aos="zoom-out-down" class="nav --nav-top">
 				<img class="nav__logo" src="assets/logo.svg" alt="Amy design" />
-				<button class="btn btn--one">Free Consultation</button>
+				<a href="https://www.frontendmentor.io/profile/Mohit-k-Mummon" target="_blank"
+					><button class="btn btn--one">Free Consultation</button></a
+				>
 			</nav>
-			<header class="header container">
+			<header data-aos="fade-up" data-aos-duration="700" class="header container">
 				<h1 class="header__heading">Design solutions made&nbsp;easy</h1>
 				<p class="header__tagline">
 					With over ten years of experience in various design disciplines, I'm your
 					one-stop shop for your design needs.
 				</p>
 			</header>
-			<section class="categories container grid">
+			<section data-aos="zoom-in-down" class="categories container grid">
 				<div class="category graphic-design">
 					<img src="assets/pattern-graphic-design.svg" alt="" />
 					<p>Graphic Design</p>
@@ -55,7 +59,7 @@
 				</div>
 			</section>
 
-			<section class="about container">
+			<section data-aos="flip-down" class="about container">
 				<img class="about__image" src="assets/image-amy.webp" alt="Amy" />
 				<div class="about__body">
 					<h2 class="heading">I'm Amy, and i'd love to work on your next project</h2>
@@ -64,7 +68,9 @@
 						designed everything from brand illustrations to complete mobile apps. I'm
 						also handy with a camera!
 					</p>
-					<button class="btn btn--two">Free Consultation</button>
+					<a href="https://www.frontendmentor.io/profile/Mohit-k-Mummon" target="_blank"
+						><button class="btn btn--two">Free Consultation</button></a
+					>
 				</div>
 			</section>
 		</div>
@@ -88,8 +94,8 @@
 			</div>
 		</section>
 
-		<div class="padding">
-			<section class="callout container">
+		<section class="padding">
+			<section data-aos="zoom-out-up" class="callout container">
 				<div class="callout__text">
 					<h2 class="callout__heading">Book a call with me</h2>
 					<p class="callout__tagline">
@@ -98,13 +104,17 @@
 						move forward from there.
 					</p>
 				</div>
-				<button class="btn btn--two">Free Consultation</button>
+				<a href="https://www.frontendmentor.io/profile/Mohit-k-Mummon" target="_blank"
+					><button class="btn btn--two">Free Consultation</button></a
+				>
 			</section>
 			<nav class="nav --nav-bottom">
 				<img class="nav__logo" src="assets/logo.svg" alt="Amy design" />
-				<button class="btn btn--one">Free Consultation</button>
+				<a href="https://www.frontendmentor.io/profile/Mohit-k-Mummon" target="_blank"
+					><button class="btn btn--one">Free Consultation</button></a
+				>
 			</nav>
-		</div>
+		</section>
 
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -148,11 +158,16 @@
 				initialSlide: 2,
 				slideToClickedSlide: true,
 				updateOnWindowResize: true,
+				loop: true,
 				navigation: {
 					nextEl: '.next',
 					prevEl: '.prev',
 				},
 			});
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
 	</body>
 </html>
