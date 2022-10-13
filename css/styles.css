@@ -35,6 +35,7 @@ html {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 
@@ -381,7 +382,7 @@ body {
 
 
 /**************** 
-    Carousel
+    Work & Carousel
 *****************/
 .work {
     margin: 0 auto 8.4rem;
@@ -428,7 +429,7 @@ body {
     border-radius: 10px;
 }
 
-.button-container {
+.swiper-buttons {
     height: min-content;
     width: min-content;
     margin: 3.2rem auto 0;
@@ -437,7 +438,7 @@ body {
     align-items: center;
     gap: 1.6rem;
 }
-.next, .prev {
+.next-btn, .prev-btn {
     background-color: var(--black);
     padding: 2.4rem;
     border-radius: 50% ;
@@ -446,11 +447,11 @@ body {
     justify-content: center;
 }
 
-.next:hover, .prev:hover {
+.next-btn:hover, .prev-btn:hover {
     background-color: var(--purple);
 }
 
-.prev > img, .next > img {
+.prev-btn > img, .next-btn > img {
     height: 1.6rem;
     width: auto;
 }
@@ -470,7 +471,7 @@ body {
 
 
 /**************** 
-Callout
+    Callout
 *****************/
 .callout {
     background-color: var(--black);
@@ -547,6 +548,7 @@ Callout
     font-size: 1.4rem;
     color: #fff;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .btn--one {
