@@ -46,7 +46,7 @@ a {
 body {
     min-height: 100vh;
     background-color: var(--white);
-    padding: 1.6rem;
+    position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -57,7 +57,7 @@ body {
 
 @media screen and (min-width: 768px) {
     body {
-        padding: 3.4rem 3.9rem;
+        /* padding: 3.4rem 3.9rem; */
     }
 }
 
@@ -361,6 +361,78 @@ body {
     .about__body .tagline {
         margin-bottom: 3.3rem;
     }
+}
+
+
+
+
+/**************** 
+    Carousel
+*****************/
+.work {
+    margin: 0 auto;
+}
+.work__heading {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    min-width: 27rem;
+    max-width: 57rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.button-container {
+    height: min-content;
+    width: min-content;
+    margin: 3.2rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+.next, .prev {
+    background-color: var(--black);
+    padding: 2.4rem;
+    border-radius: 50% ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.prev > img, .next > img {
+    height: 1.6rem;
+    width: auto;
 }
 
 
