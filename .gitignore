@@ -19,3 +19,5 @@
 *.md
 
 /Figma File
+/node_modules
+/package-lock.json
